@@ -167,10 +167,9 @@ function nextQuestion(){
   $('.btsBox').on('click', '.nextButton', function (event) {
     $('.altBox').hide();
     $('.questionBox').show();
-    updateQuestionNumber();
+    showQuestionNumber();
     $('.questionBox form').replaceWith(generateQuestion());
   });
-  console.log("hello")
 }
 
 function finalScore(){
@@ -187,7 +186,7 @@ function restart(){
     event.preventDefault();
     resetStats();
     $('.altBox').hide();
-    $('.startQuiz').show();
+    $('.quiz').show();
   });
 }
 
