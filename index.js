@@ -94,7 +94,7 @@ function resetStats(){
 //utilize start button
 function startQuiz(){
    $('.altBox').hide();
-    $('.quiz').on('click', '.startButton', function (event) {
+    $('.quiz').on('click', '.start-button', function (event) {
     $('.quiz').hide();
     $('.questionNumber').text(1);
     $('.questionBox').show();
