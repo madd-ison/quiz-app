@@ -156,8 +156,8 @@ function wrongAnswer(){
   $('.response').html(
     `<h3>Ah, better luck next time.</h3>
     <img src="sad-suga.jpg" alt="Suga sad face" class="images" width="200px">
-    <p class="sizeMe">The correct answer is:</p>
-    <p class="sizeMe">${STORE[questionNumber].correctAnswer}</p>
+    <p class="sized">The correct answer is:</p>
+    <p class="sized">${STORE[questionNumber].correctAnswer}</p>
     <button type="button" class="nextButton button">Next</button>`
   );
 }
