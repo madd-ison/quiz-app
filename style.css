@@ -1,1 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
 
+* {
+  box-sizing: border-box;
+  font-family: 'Chelsea Market', cursive;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(235, 165, 225), rgb(204, 204, 255));
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  text-align: center;
+}
+
+header li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.btsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(https://cutewallpaper.org/21/bts-background-laptop/Bts-Love-Yourself-Answer-Free-Wallpaper-and-Backgrounds-.jpg) fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.quiz, .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  border: 1px solid purple;
+  background-color: rgb(235, 165, 225, .5);
+  padding: 50px;
+  margin: auto;
+  color: #000;
+}
+
+.button {
+  margin-left: auto;
+  margin-right: auto;
+  height: 2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: rgb(235, 165, 225);
+}
+.button:hover,
+.button:active {
+  border: 1px solid purple;
+  background-color: rgb(235, 165, 225);
+  color: #000;
+}
+
+footer {
+  text-align: center;
+}
+footer img {
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 320px) {
+}
+
+@media only screen and (min-width: 550px) {
+
+}
+
+@media only screen and (min-width: 800px) {
+  
+}
