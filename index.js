@@ -69,12 +69,13 @@ function generateQuestion(){
     finalScore();
     $('.questionNumber').text(5);
   }
+  console.log("hey");
 }
 
 //increments 1 by 1, updates current score in header
 function showScore(){
   score++;
-  $('.score').text(score);
+  $('.score').text(score + "/5");
 }
 
 //increments 1 by 1, shows question "n out of 5"
@@ -94,8 +95,9 @@ function resetStats(){
 //utilize start button
 function startQuiz(){
    $('.altBox').hide();
-    $('.quiz').on('click', '.start-button', function (event) {
-    $('.quiz').hide();
+    $('.quiz').on('click', '.startButton', function (event) {
+    event.preventDefault;
+    $('.quiz').hide()
     $('.questionNumber').text(1);
     $('.questionBox').show();
     $('.questionBox').prepend(generateQuestion());
@@ -131,7 +133,7 @@ function createForm(questionIndex){
   let fieldSelector = $(questionForm).find('fieldset');
 
   STORE[questionIndex].answers.forEach(function (answerValue, answerIndex) {
-    $(`<label class="sizeMe" for="${answerIndex}">
+    $(`<label class="sized" for="${answerIndex}">
         <input class="radio" type="radio" id="${answerIndex}" value="${answerValue}" name="answer" required>
         <span>${answerValue}</span>
       </label>
@@ -139,6 +141,7 @@ function createForm(questionIndex){
   });
   $(`<button type="submit" class="submitButton button"> Submit</button > `).appendTo(fieldSelector);
   return questionForm;
+  console.log("hi");
 }
 
 function correctAnswer(){
@@ -148,14 +151,14 @@ function correctAnswer(){
       <p class="sized">You got it right!</p>
       <button type="button" class="nextButton button">Next</button>`
   );
-  updateScore();
+  showScore();
 }
 
 function wrongAnswer(){
   $('.response').html(
     `<h3>Ah, better luck next time.</h3>
     <img src="sad-suga.jpg" alt="Suga sad face" class="images" width="200px">
-    <p class="sizeMe">The correct answe is:</p>
+    <p class="sizeMe">The correct answer is:</p>
     <p class="sizeMe">${STORE[questionNumber].correctAnswer}</p>
     <button type="button" class="nextButton button">Next</button>`
   );
@@ -169,6 +172,7 @@ function nextQuestion(){
     updateQuestionNumber();
     $('.questionBox form').replaceWith(generateQuestion());
   });
+  console.log("hello")
 }
 
 function finalScore(){
