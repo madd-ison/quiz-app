@@ -1,12 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
-
-* {
-  box-sizing: border-box;
-  font-family: 'Chelsea Market', cursive;
-}
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap');
 
 body {
   background: linear-gradient(90deg, rgb(235, 165, 225), rgb(204, 204, 255));
+  font-family: 'Roboto Mono', monospace;
 }
 
 .container {
@@ -54,12 +50,20 @@ header li {
   text-transform: uppercase;
   background-color: #fff;
   color: rgb(235, 165, 225);
+  font-family: 'Chelsea Market', cursive;
 }
 .button:hover,
 .button:active {
   border: 1px solid purple;
   background-color: rgb(235, 165, 225);
   color: #000;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  cursor: pointer;
 }
 
 footer {
