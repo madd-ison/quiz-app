@@ -68,8 +68,7 @@ function generateQuestion(){
     $('.questionBox').hide();
     finalScore();
     $('.questionNumber').text(5);
-  }
-  console.log("hey");
+  };
 }
 
 //increments 1 by 1, updates current score in header
@@ -141,14 +140,13 @@ function createForm(questionIndex){
   });
   $(`<button type="submit" class="submitButton button"> Submit</button > `).appendTo(fieldSelector);
   return questionForm;
-  console.log("hi");
 }
 
 function correctAnswer(){
   $('.response').html(
     `<h3>Your answer is correct!</h3>
     <img src="jungkook.gif" alt="jungkook finger hearts" class="images" width="200px">
-      <p class="sized">You got it right!</p>
+      <p class="sized">Nice!</p>
       <button type="button" class="nextButton button">Next</button>`
   );
   showScore();
