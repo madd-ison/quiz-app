@@ -24,7 +24,7 @@ header li {
   display: inline-block;
   list-style-type: none;
   color: #fff;
-  text-shadow: 2px 2px #808080;
+  text-shadow: 2px 2px #000;
 }
 
 .btsBox {
