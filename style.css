@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap');
 
 body {
-  background: linear-gradient(90deg, rgb(235, 165, 225), rgb(204, 204, 255));
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1)
+    ), url(https://cutewallpaper.org/21/bts-background-laptop/Bts-Love-Yourself-Answer-Free-Wallpaper-and-Backgrounds-.jpg) fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -11,20 +17,21 @@ body {
 
 header {
   text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px rgb(235, 165, 225);
 }
-
 header li {
   display: inline-block;
   list-style-type: none;
+  color: #fff;
+  text-shadow: 2px 2px #808080;
 }
 
 .btsBox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(https://cutewallpaper.org/21/bts-background-laptop/Bts-Love-Yourself-Answer-Free-Wallpaper-and-Backgrounds-.jpg) fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(90deg, rgb(235, 165, 225, .7), rgb(204, 204, 255, .7));
   padding: 100px;
   margin-left: 10%;
   margin-right: 10%;
@@ -36,10 +43,14 @@ header li {
   text-align: center;
   align-items: center;
   border: 1px solid purple;
-  background-color: rgb(235, 165, 225, .5);
+  background-color: rgba(248, 242, 247, 0.6);
   padding: 50px;
   margin: auto;
   color: #000;
+}
+
+form, .sized {
+  font-size: 18px;
 }
 
 .button {
@@ -75,13 +86,25 @@ footer img {
   margin-top: 50px;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 600px ) {
+  header {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header {
+    font-size: 28px;
+  }
+  form, .sized {
+    font-size: 21px;
+  }
 }
 
-@media only screen and (min-width: 550px) {
-
-}
-
-@media only screen and (min-width: 800px) {
-  
+@media only screen and (min-width: 998px) {
+  header {
+    font-size: 32px;
+  }
+  form, .sized {
+    font-size: 24px;
+  }
 }
