@@ -134,6 +134,7 @@ function createForm(questionIndex){
   STORE[questionIndex].answers.forEach(function (answerValue, answerIndex) {
     $(`<label class="sized" for="${answerIndex}">
         <input class="radio" type="radio" id="${answerIndex}" value="${answerValue}" name="answer" required>
+        <br>
         <span>${answerValue}</span>
       </label>
       `).appendTo(fieldSelector);
