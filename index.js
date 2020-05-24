@@ -74,7 +74,7 @@ function generateQuestion(){
 //increments 1 by 1, updates current score in header
 function showScore(){
   score++;
-  $('.score').text(score + "/5");
+  $('.score').text(score + "out of 5");
 }
 
 //increments 1 by 1, shows question "n out of 5"
