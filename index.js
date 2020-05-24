@@ -45,7 +45,7 @@ const STORE = [
   },
   {
     question:
-      'V once played in role in the historical television series: ',
+      'V once played in role in the historical drama: ',
     answers: [
       'Romance Is A Bonus Book',
       'Hotel Del Luna',
